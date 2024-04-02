@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --linear-gradient: linear-gradient(90deg, #262626, #324dc7, #0c33e2);
+    
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    background-image: var(--linear-gradient);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#eng-form {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+    height: min-content;
+}
+
+#math-form {
+    background-color: #fff;
+    text-align: center;
+    margin-left: 10%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+    height: min-content;
+}
+
+#eng-form input,
+#math-form input {
+    /* align-self: center; */
+    width: 100%; /* Define a largura do input para ocupar todo o espaço disponível */
+    height: 40px; /* Define a altura do input */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
+    font-size: 16px; /* Define o tamanho da fonte do texto dentro do input */
+    border: 1px solid #0c33e2; /* Adiciona uma borda ao input para destacá-lo */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao input */
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+button {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #262626;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #4466ff;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* button.close {
+    font-size: 14px;
+    max-width: 70px;
+    max-height: 90px;
+    margin: 20px auto;
+    background: rgb(48, 48, 48);
+    display: flex;
+    justify-content: center;
+}
+
+button.again {
+    font-size: 14px;
+    max-width: 70px;
+    max-height: 90px;
+    margin: 20px auto;
+    background: yellowgreen;
+    display: flex;
+    justify-content: center;
+} */
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h4 {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.results {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: auto;
+    padding: 20px;
+}
+
+footer img {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+
+    body{
+        overflow: hidden;
+        height: 100%;
+    }
+ 
+    #calculator {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    label,
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        margin-top: 8%;
+        font-size: 16px;
+    }
+
+    #resultado-frete{
+        font-size: 10px;
+    }
+    
+    #main {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 8%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction:row;
+        margin-right: auto;
+        justify-content: space;
+        text-align: center;
+    }
+}

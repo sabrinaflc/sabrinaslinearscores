@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title id="title">Linear SAT Score Calculator</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/favicon.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <div id="calculator">
+            <h1>Linear SAT Score Calculator</h1>
+            <h4>Fill with the number of correct answers for each module</h4><br>
+            <div id="container">
+                <div id="eng-form">
+                    <label for="correctE-module1">ENGLISH | MODULE 1:</label>
+                    <input maxlength="2" inputmode="numeric" type="text" id="correctE-module1" placeholder="#" oninput="limitInputE(this)" required><br>
+                    <label for="correctE-module2">ENGLISH | MODULE 2:</label>
+                    <input maxlength="2" inputmode="numeric" type="text" id="correctE-module2" placeholder="#" oninput="limitInputE(this)" required>
+                </div>
+                <div id="math-form">
+                    <label for="correctM-module1">MATH | MODULE 1:</label>
+                    <input maxlength="2" inputmode="numeric" type="text" id="correctM-module1" placeholder="#" oninput="limitInputM(this)" required><br>
+                    <label for="correctM-module2">MATH | MODULE 2:</label>
+                    <input maxlength="2" inputmode="numeric" type="text" id="correctM-module2" placeholder="#" oninput="limitInputM(this)" required>
+                </div>
+            </div>
+            <button type="button" id="calculate-total">Calculate Your Section and Total Scores</button>
+            <div id="results"></div> <!-- Placeholder for displaying results -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="https://www.linkedin.com/in/sabrina-lins/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/ssabrinalins/" target="_blank"><img src="assets/instagram.png" alt="Instagram"></a>
+        <a href="https://github.com/sabrinaflc" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+    </footer>
+
+    <script>
+        function limitInputE(input) {
+            var value = parseInt(input.value);
+            if (value > 33) {
+                input.value = ""
+                alert("The value of for each english module needs to be between 0 and 33.");
+                return;
+            }
+        }
+
+        function limitInputM(input) {
+            var value = parseInt(input.value);
+
+            if (value > 27) {
+                input.value = ""
+                alert("The value of for each math module needs to be between 0 and 27.");
+                return; 
+            }
+        }
+
+        document.getElementById("calculate-total").addEventListener("click", function() {
+            var correctE_module1 = document.getElementById('correctE-module1').value;
+            var correctE_module2 = document.getElementById('correctE-module2').value;
+            var correctM_module1 = document.getElementById('correctM-module1').value;
+            var correctM_module2 = document.getElementById('correctM-module2').value;
+
+    if (correctE_module1.trim() === '' || correctE_module2.trim() === '' || correctM_module1.trim() === '' || correctM_module2.trim() === '') {
+        alert("Please fill with the number of correct answers for all modules.");
+        return; 
+    }
+
+    window.location.href = "score.html?correctE-module1=" + correctE_module1 + "&correctE-module2=" + correctE_module2 + "&correctM-module1=" + correctM_module1 + "&correctM-module2=" + correctM_module2;
+});
+
+    </script>
+</body>
+</html>

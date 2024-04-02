@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --linear-gradient: linear-gradient(90deg, #262626, #324dc7, #0c33e2);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.no-scroll {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+body {
+    background-image: var(--linear-gradient);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh; /* Alterado para min-height para permitir rolagem */
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.scores-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.english-scores,
+.math-scores,
+.total-scores {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    width: calc(30% - 20px); /* Ajuste conforme necessário */
+    margin-right: 20px; /* Espaço entre as caixas */
+}
+
+.english-scores > div,
+.math-scores > div,
+.total-scores > div {
+    margin: 10px auto;
+    color: #000;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+button {
+    margin-bottom: 20px; /* Alterado para margem inferior */
+    background: #262626;
+    border: none;
+    padding: 10px 20px; /* Ajustado para espaçamento interno */
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4466ff;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
