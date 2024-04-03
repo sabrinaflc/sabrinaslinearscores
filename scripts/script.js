@@ -1,3 +1,5 @@
+/* Source: https://satsuite.collegeboard.org/media/pdf/scoring-sat-practice-test-1-digital.pdf. Copyright © 2024. The College Board. www.collegeboard.org */
+
 function lowerEnglish(soma) {
     if (soma == 0) {
         return 200;
