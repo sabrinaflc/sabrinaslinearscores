@@ -198,7 +198,8 @@ footer img {
     body {
         overflow: hidden;
         height: 100%;
-        background-image: none; /* Remove the gradient background on smaller screens */
+        background-image: var(--linear-gradient);
+        /* background-image: none; /* Remove the gradient background on smaller screens
         background-color: #c732ae; /* Set a solid background color for smaller screens */
     }
     
