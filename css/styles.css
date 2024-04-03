@@ -162,6 +162,12 @@ h4 {
     color: #ffffff;
 }
 
+.copy {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
 .results {
     font-size: 14px;
     text-align: center;
@@ -193,7 +199,12 @@ footer img {
         overflow: hidden;
         height: 100%;
         background-image: none; /* Remove the gradient background on smaller screens */
-        background-color: #666666; /* Set a solid background color for smaller screens */
+        background-color: #c732ae; /* Set a solid background color for smaller screens */
+    }
+    
+    .copy {
+        font-size: 12px; /* Reduzir o tamanho da fonte para telas menores */
+        margin-top: 770px; /* Reduzir a margem superior para telas menores */
     }
 
     #calculator {
