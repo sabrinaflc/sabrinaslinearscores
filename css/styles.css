@@ -202,11 +202,11 @@ footer img {
         background-color: #c732ae; /* Set a solid background color for smaller screens */
     }
     
-    .copy {
-        font-size: 12px; /* Reduzir o tamanho da fonte para telas menores */
-        margin-top: 770px; /* Reduzir a margem superior para telas menores */
+    /* .copy {
+        font-size: 12px; 
+        margin-top: 770px;
     }
-
+ */
     #calculator {
         max-width: 100%;
         padding: 20px;
