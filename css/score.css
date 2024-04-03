@@ -25,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh; /* Alterado para min-height para permitir rolagem */
+    min-height: 100vh;
     margin: 0;
 }
 
@@ -37,6 +37,7 @@ body {
 .scores-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap; /* Adicionado para que os elementos possam envolver para linhas adicionais */
     max-width: 800px;
     margin-top: 20px;
 }
@@ -50,8 +51,8 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
-    width: calc(30% - 20px); /* Ajuste conforme necessário */
-    margin-right: 20px; /* Espaço entre as caixas */
+    width: calc(30% - 20px);
+    margin-bottom: 20px; /* Adicionado espaço entre as caixas */
 }
 
 .english-scores > div,
@@ -74,10 +75,10 @@ label {
 }
 
 button {
-    margin-bottom: 20px; /* Alterado para margem inferior */
+    margin-bottom: 20px;
     background: #262626;
     border: none;
-    padding: 10px 20px; /* Ajustado para espaçamento interno */
+    padding: 10px 20px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
@@ -104,4 +105,22 @@ button:hover {
     height: 30px;
     margin: 0 10px;
     cursor: pointer;
+}
+
+/* Media queries para tornar o layout responsivo */
+
+@media only screen and (max-width: 800px) {
+    .english-scores,
+    .math-scores,
+    .total-scores {
+        width: calc(50% - 20px); /* Ajuste para duas colunas */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .english-scores,
+    .math-scores,
+    .total-scores {
+        width: calc(100% - 20px); /* Ajuste para uma coluna em telas menores */
+    }
 }
