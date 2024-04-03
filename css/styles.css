@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root {
-    --linear-gradient: linear-gradient(90deg, #262626, #324dc7, #0c33e2);
+    --linear-gradient: linear-gradient(90deg, #262626, #c732ae, #e20c90);
     
 }
 
@@ -119,7 +119,7 @@ button:hover {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    background: #4466ff;
+    background: #700447;
     border: none;
     padding: 10px;
     color: #fff;
