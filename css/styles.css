@@ -163,8 +163,8 @@ h4 {
 }
 
 .copy {
-    font-size: 14px;
-    color: #ccc;
+    font-size: 12px;
+    color: #fcfcfc;
     margin-top: 20px;
 }
 
@@ -202,11 +202,6 @@ footer img {
         background-color: #c732ae; /* Set a solid background color for smaller screens */
     }
     
-    /* .copy {
-        font-size: 12px; 
-        margin-top: 770px;
-    }
- */
     #calculator {
         max-width: 100%;
         padding: 20px;
@@ -239,7 +234,7 @@ footer img {
 
     footer {
         position: fixed;
-        bottom: 4%;
+        bottom: 2%;
         left: 0;
         right: 0;
         display: flex;
