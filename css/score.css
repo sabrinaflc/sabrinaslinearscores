@@ -121,6 +121,20 @@ button:hover {
     .total-scores {
         width: calc(50% - 20px); /* Ajuste para duas colunas */
     }
+
+    h1 {
+        font-size: 14px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .copy {
+        font-size: 8px;
+        color: #fcfcfc;
+        margin-bottom: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
