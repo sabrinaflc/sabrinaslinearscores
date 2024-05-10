@@ -74,7 +74,7 @@ body {
     height: 40px; /* Define a altura do input */
     padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
     font-size: 16px; /* Define o tamanho da fonte do texto dentro do input */
-    border: 1px solid #0c33e2; /* Adiciona uma borda ao input para destacá-lo */
+    border: 1px solid #e20c89; /* Adiciona uma borda ao input para destacá-lo */
     border-radius: 8px; /* Adiciona bordas arredondadas ao input */
 }
 
@@ -192,6 +192,7 @@ footer img {
         font-size: 10px;
         text-align: center;
         color: #ffffff;
+        margin-bottom: 19px;
     }
 
     label,
