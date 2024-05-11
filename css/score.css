@@ -141,14 +141,13 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
     .english-scores,
-    .math-scores {
-        width: calc(50% - 20px); /* Ajuste para uma coluna em telas menores */
-        gap: 0;
+    .math-scores,
+    .total-scores {
+        width: calc(50% - 20px);
     }
 
-    .total-scores {
-        width: calc(50% - 20px); /* Ajuste para uma coluna em telas menores */
-        /* margin-bottom: 50%; */
+    .scores-container {
+        margin-top: -140px; /* Adiciona espaço entre .copy e .score-container */
     }
 
     h1 {
@@ -179,7 +178,6 @@ button:hover {
 
     button {
         margin-top: 8%;
-        margin-bottom: 210%;
         font-size: 16px;
     }
 
