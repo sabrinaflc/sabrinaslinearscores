@@ -39,7 +39,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap; /* Adicionado para que os elementos possam envolver para linhas adicionais */
     max-width: 800px;
-    margin-bottom: 40%;
+    margin-top: 10px;
 }
 
 .english-scores,
@@ -141,9 +141,14 @@ button:hover {
 
 @media only screen and (max-width: 500px) {
     .english-scores,
-    .math-scores,
+    .math-scores {
+        width: calc(50% - 20px); /* Ajuste para uma coluna em telas menores */
+        gap: 0;
+    }
+
     .total-scores {
         width: calc(50% - 20px); /* Ajuste para uma coluna em telas menores */
+        /* margin-bottom: 50%; */
     }
 
     h1 {
@@ -174,6 +179,7 @@ button:hover {
 
     button {
         margin-top: 8%;
+        margin-bottom: 210%;
         font-size: 16px;
     }
 
