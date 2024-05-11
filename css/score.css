@@ -109,7 +109,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* layout responsivo */
+/* layout responsivo para celular */
 
 @media only screen and (max-width: 800px) {
     .english-scores,
@@ -161,3 +161,6 @@ button:hover {
         transform: translate(-50%, -50%);
     }
 }
+
+
+/* layout responsivo para ipad */
