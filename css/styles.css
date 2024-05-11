@@ -48,7 +48,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    /* gap: 25px; */
     max-width: 400px;
     height: min-content;
 }
@@ -62,7 +62,7 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    /* gap: 25px; */
     max-width: 400px;
     height: min-content;
 }
@@ -132,7 +132,7 @@ h1 {
     color: #ffffff;
 }
 
-h4 {
+.sub {
     font-size: 14px;
     text-align: center;
     color: #ffffff;
@@ -188,7 +188,7 @@ footer img {
         font-size: 15px;
     }
 
-    h4 {
+    .sub {
         font-size: 10px;
         text-align: center;
         color: #ffffff;
