@@ -147,7 +147,7 @@ button:hover {
     }
 
     .scores-container {
-        margin-top: -140px; /* Adiciona espaço entre .copy e .score-container */
+        margin-top: -120px; /* Adiciona espaço entre .copy e .score-container */
     }
 
     h1 {
