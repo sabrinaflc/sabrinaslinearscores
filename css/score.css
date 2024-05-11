@@ -2,6 +2,7 @@
 
 :root {
     --linear-gradient: linear-gradient(90deg, #262626, #8b207a, #b61b7b);
+    
 }
 
 * {
@@ -11,61 +12,70 @@
     box-sizing: border-box;
 }
 
-.no-scroll {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-}
-
 body {
     background-image: var(--linear-gradient);
     color: #fff;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0;
-}
-
-.header {
+    flex-direction: column;
+    overflow: hidden;
     width: 100%;
-    padding-top: 20px;
+    height: 100%;
 }
 
-.scores-container {
+#main {
+    height: 100%;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Adicionado para que os elementos possam envolver para linhas adicionais */
-    max-width: 800px;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.english-scores,
-.math-scores,
-.total-scores {
-    display: inline-block;
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+#eng-form {
     background-color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
-    width: calc(30% - 20px);
-    margin-bottom: 20px; /* Adicionado espaço entre as caixas */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+    height: min-content;
 }
 
-.english-scores > div,
-.math-scores > div,
-.total-scores > div {
-    margin: 10px auto;
-    color: #000;
-}
-
-h1 {
-    font-size: 28px;
+#math-form {
+    background-color: #fff;
     text-align: center;
-    color: #ffffff;
+    margin-left: 10%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 400px;
+    height: min-content;
+}
+
+#eng-form input,
+#math-form input {
+    /* align-self: center; */
+    width: 100%; /* Define a largura do input para ocupar todo o espaço disponível */
+    height: 40px; /* Define a altura do input */
+    padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
+    font-size: 16px; /* Define o tamanho da fonte do texto dentro do input */
+    border: 1px solid #e20c89; /* Adiciona uma borda ao input para destacá-lo */
+    border-radius: 8px; /* Adiciona bordas arredondadas ao input */
 }
 
 label {
@@ -74,58 +84,114 @@ label {
     color: #333;
 }
 
+input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
 button {
-    margin-bottom: 20px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
     background: #262626;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
 
 button:hover {
-    background: #700447;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #b61b7b;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 4%;
+    font-size: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sub {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
 }
 
 .copy {
     font-size: 12px;
     color: #fcfcfc;
-    margin-top: 1px;
+    margin-top: 33px;
 }
 
-.footer {
+.results {
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer {
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     justify-content: center;
+    /* margin-top: 1%; */
+    margin-bottom: 35%;
     padding: 20px;
 }
 
-.footer img {
+footer img {
+    display: flex;
+    justify-content: center;
     width: 30px;
     height: 30px;
     margin: 0 10px;
     cursor: pointer;
 }
 
-/* Media queries para tornar o layout responsivo */
-
-@media only screen and (max-width: 800px) {
-    .english-scores,
-    .math-scores,
-    .total-scores {
-        width: calc(50% - 20px); /* Ajuste para duas colunas */
+@media screen and (max-width: 767px) {    
+    #calculator {
+        max-width: 100%;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 14px;
+        font-size: 15px;
+    }
+
+    .sub {
+        font-size: 10px;
         text-align: center;
         color: #ffffff;
+        margin-bottom: 19px;
+    }
+
+    label,
+    input {
+        font-size: 14px;
     }
 
     .copy {
@@ -135,12 +201,33 @@ button:hover {
         margin-left: 20px;
         margin-right: 20px;
     }
-}
 
-@media only screen and (max-width: 500px) {
-    .english-scores,
-    .math-scores,
-    .total-scores {
-        width: calc(100% - 20px); /* Ajuste para uma coluna em telas menores */
+    button {
+        margin-top: 8%;
+        font-size: 16px;
+    }
+
+    button:hover {
+        margin-top: 8%;
+        font-size: 16px;
+    }
+
+    #main {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer {
+        position: fixed;
+        bottom: 2%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        justify-content: space;
+        text-align: center;
     }
 }

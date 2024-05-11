@@ -227,6 +227,7 @@ footer img {
         display: flex;
         flex-direction: row;
         margin-right: auto;
+        margin-bottom: 10%;
         justify-content: space;
         text-align: center;
     }
