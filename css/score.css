@@ -29,10 +29,15 @@ body {
     margin: 0;
 }
 
-.header {
+#title {
+    display: flex;
+    justify-content: center;
+    height: 100%;
     width: 100%;
-    padding-top: 20px;
+    align-items: center;
+    flex-direction: column; /* Adicionado para tornar os elementos em uma coluna */
 }
+
 
 .scores-container {
     display: flex;
