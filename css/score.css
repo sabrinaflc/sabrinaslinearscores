@@ -19,7 +19,7 @@
 
 body {
     background-image: var(--linear-gradient);
-    /* color: #fff; */
+    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
