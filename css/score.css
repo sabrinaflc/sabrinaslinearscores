@@ -39,7 +39,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap; /* Adicionado para que os elementos possam envolver para linhas adicionais */
     max-width: 800px;
-    margin-bottom: 45%;
+    margin-bottom: 40%;
 }
 
 .english-scores,
