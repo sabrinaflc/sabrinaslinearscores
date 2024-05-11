@@ -236,7 +236,7 @@ footer img {
 
 /* layout responsivo ipad */
 
-@media screen and (max-width: 1024px) { 
+/* @media screen and (max-width: 1024px) { 
     #calculator {
         max-width: 100%;
         padding: 20px;
@@ -294,4 +294,4 @@ footer img {
         justify-content: center; 
         text-align: center;
     }
-}
+} */
