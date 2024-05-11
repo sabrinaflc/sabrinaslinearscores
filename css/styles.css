@@ -178,7 +178,7 @@ footer img {
         padding: 20px;
     }
 
-    h1 {
+    .header {
         font-size: 15px;
     }
 
@@ -197,7 +197,7 @@ footer img {
     .copy {
         font-size: 8px;
         color: #fcfcfc;
-        margin-bottom: 15px;
+        margin-top: 174%;
         margin-left: 20px;
         margin-right: 20px;
     }
