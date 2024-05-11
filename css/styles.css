@@ -231,3 +231,51 @@ footer img {
         text-align: center;
     }
 }
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+    #calculator {
+        max-width: 80%;
+        padding: 30px;
+    }
+
+    .header { 
+        font-size: 20px;
+    }
+
+    .sub {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    label,
+    input {
+        font-size: 16px;
+    }
+
+    .copy {
+        font-size: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    button {
+        margin-top: 10%;
+        font-size: 18px;
+    }
+
+    button:hover {
+        margin-top: 10%;
+        font-size: 18px;
+    }
+
+    #main {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer {
+        bottom: 2%;
+        margin-bottom: 55%;
+    }
+} */
