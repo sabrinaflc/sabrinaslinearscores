@@ -290,15 +290,15 @@ function lowerMath(soma) {
     } else if (soma == 21) {
         return 370;
     } else if (soma == 22) {
-        return 380;
+        return 370;
     } else if (soma == 23) {
-        return 390;
+        return 380;
     } else if (soma == 24) {
-        return 400;
+        return 390;
     } else if (soma == 25) {
-        return 420;
+        return 400;
     } else if (soma == 26) {
-        return 430;
+        return 420;
     } else if (soma == 27) {
         return 440;
     } else if (soma == 28) {
