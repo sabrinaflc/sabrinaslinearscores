@@ -9,7 +9,7 @@ Allows easy input of correct/incorrect questions
 Real-time calculation of your estimated Linear SAT score
 Designed with students in mind
 
-##💡 Purpose
+## 💡 Purpose
 
 Many students struggle to estimate their SAT score based on raw performance. This tool helps streamline that process, offering a fast and clear way to understand your score on the Linear SAT format.
 
