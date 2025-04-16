@@ -139,6 +139,40 @@ button:hover {
     width: 100%;
 }
 
+.im-button,
+.ie-button,
+.all-button{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #e3f6ea;
+    border: none;
+    padding: 10px;
+    color: #20878b;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.im-button:hover,
+.ie-button:hover,
+.all-button:hover {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #023f41;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
 h1 {
     margin-top: 4%;
     font-size: 28px;
