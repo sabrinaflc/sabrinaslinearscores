@@ -102,8 +102,22 @@
         return; 
     }
 
-    window.location.href = "score.html?correctE-module1=" + correctE_module1 + "&correctE-module2=" + correctE_module2 + "&correctM-module1=" + correctM_module1 + "&correctM-module2=" + correctM_module2;
-    
+    /* window.location.href = "score.html?correctE-module1=" + correctE_module1 + "&correctE-module2=" + correctE_module2 + "&correctM-module1=" + correctM_module1 + "&correctM-module2=" + correctM_module2;
+     */
+    // Criar objeto com os dados
+        const scoreData = {
+            "correctE-module1": correctE_module1,
+            "correctE-module2": correctE_module2,
+            "correctM-module1": correctM_module1,
+            "correctM-module2": correctM_module2
+        };
+
+        // Salvar no sessionStorage
+        sessionStorage.setItem("scores", JSON.stringify(scoreData));
+
+        // Redirecionar sem dados na URL
+        window.location.href = "score.html";
+
 });
 
     </script>
