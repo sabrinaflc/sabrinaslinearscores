@@ -25,6 +25,7 @@ Many students struggle to estimate their SAT score based on raw performance. Thi
 - HTML
 - CSS
 - JavaScript
+- SweetAlert Library
 
 ## 📌 Future Improvements
 
@@ -34,5 +35,7 @@ Option to save and compare multiple attempts
 
 If you have any suggestions or feedback, feel free to open an issue or get in touch!
 - brina.lins@outlook.com
+
+- ## LAST UPDATE: April, 16 - 2025
 
 ## SAT® is a registered trademark of College Board which is not affiliated with and does not endorse this site or tool.  The scores calculated by using this tool are not considered official SAT® scores, nor are the scores that are calculated using this tool approved or officially recognized by College Board.  The determination of official SAT® scores is solely under the jurisdiction of College Board.
