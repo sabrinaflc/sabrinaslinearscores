@@ -6,6 +6,7 @@
     <title id="title">Scores Calculator</title>
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -47,8 +48,13 @@
         function limitInputE(input) {
             var value = parseInt(input.value);
             if (value > 33) {
-                input.value = ""
-                alert("The value of for each english module needs to be between 0 and 33.");
+                input.value = "";
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Invalid Value',
+                    text: 'The value of for each english module needs to be between 0 and 33.',
+                    confirmButtonText: 'OK'
+                })
                 return;
             }
         }
@@ -57,8 +63,13 @@
             var value = parseInt(input.value);
 
             if (value > 27) {
-                input.value = ""
-                alert("The value of for each math module needs to be between 0 and 27.");
+                input.value = "";
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Invalid Value',
+                    text: 'The value of for each math module needs to be between 0 and 27.',
+                    confirmButtonText: 'OK'
+                })
                 return; 
             }
         }
@@ -70,7 +81,12 @@
             var correctM_module2 = document.getElementById('correctM-module2').value;
 
     if (correctE_module1.trim() === '' || correctE_module2.trim() === '' || correctM_module1.trim() === '' || correctM_module2.trim() === '') {
-        alert("Please fill with the number of correct answers for all modules.");
+        Swal.fire({
+                    icon: 'warning',
+                    title: 'Invalid Value',
+                    text: 'Please fill all sections with the number of correct answers for all modules.',
+                    confirmButtonText: 'OK'
+                })
         return; 
     }
 

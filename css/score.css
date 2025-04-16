@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root {
-    --linear-gradient: linear-gradient(90deg, #262626, #8b207a, #b61b7b);
+    --linear-gradient: linear-gradient(90deg, #262626, #20878b, #1bb64c);
 }
 
 * {
@@ -15,6 +15,10 @@
     overflow: hidden;
     position: fixed;
     width: 100%;
+}
+
+a{
+    text-decoration: none;
 }
 
 body {
@@ -41,7 +45,10 @@ body {
 .math-scores,
 .total-scores {
     display: inline-block;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     padding: 20px;
     border-radius: 8px;
@@ -54,7 +61,7 @@ body {
 .math-scores > div,
 .total-scores > div {
     margin: 10px auto;
-    color: #000;
+    color: #ffffff;
 }
 
 h1 {
@@ -67,23 +74,37 @@ h1 {
 label {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #333;
+    color: #ffffff;
 }
 
 button {
-    margin-bottom: 20px;
-    background: #262626;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #e3f6ea;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
+    color: #20878b;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background: #023f41;
+    border: none;
+    padding: 10px;
     color: #fff;
     font-weight: bold;
     font-size: 18px;
     border-radius: 4px;
     cursor: pointer;
-}
-
-button:hover {
-    background: #700447;
+    width: 100%;
 }
 
 .copy {

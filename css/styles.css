@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
 :root {
-    --linear-gradient: linear-gradient(90deg, #262626, #8b207a, #b61b7b);
-    
+    --linear-gradient: linear-gradient(90deg, #262626, #20878b, #1bb64c);
 }
 
 * {
     font-family: 'Poppins', sans-serif;
+    font-weight: 200vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,7 +41,6 @@ body {
 }
 
 #eng-form {
-    background-color: #fff;
     text-align: center;
     padding: 40px;
     border-radius: 8px;
@@ -51,12 +50,19 @@ body {
     gap: 5px;
     max-width: 400px;
     height: min-content;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px 30px 30px;
+    overflow: hidden;
 }
 
 #math-form {
-    background-color: #fff;
     text-align: center;
     margin-left: 10%;
+    text-align: center;
     padding: 40px;
     border-radius: 8px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.323);
@@ -65,6 +71,13 @@ body {
     gap: 5px;
     max-width: 400px;
     height: min-content;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(35px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.25);
+    padding: 30px 30px 30px 30px;
+    overflow: hidden;
 }
 
 #eng-form input,
@@ -74,14 +87,14 @@ body {
     height: 40px; /* Define a altura do input */
     padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
     font-size: 16px; /* Define o tamanho da fonte do texto dentro do input */
-    border: 1px solid #e20c89; /* Adiciona uma borda ao input para destacá-lo */
+    border: 1px solid #20878b; /* Adiciona uma borda ao input para destacá-lo */
     border-radius: 8px; /* Adiciona bordas arredondadas ao input */
 }
 
 label {
     font-size: 16px;
     margin-bottom: 8px;
-    color: #333;
+    color: #ffffff;
 }
 
 input {
@@ -100,10 +113,10 @@ button {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    background: #262626;
+    background: #e3f6ea;
     border: none;
     padding: 10px;
-    color: #fff;
+    color: #20878b;
     font-weight: bold;
     font-size: 18px;
     border-radius: 4px;
@@ -115,7 +128,7 @@ button:hover {
     margin-top: 2%;
     display: flex;
     justify-content: center;
-    background: #b61b7b;
+    background: #023f41;
     border: none;
     padding: 10px;
     color: #fff;
